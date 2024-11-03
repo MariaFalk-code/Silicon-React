@@ -1,9 +1,9 @@
-import Logo1 from '../resources/icons and logos/logo1.svg'
-import Logo2 from '../resources/icons and logos/logo2.svg'
-import Logo3 from '../resources/icons and logos/logo3.svg'
-import Logo4 from '../resources/icons and logos/logo4.svg'
-import Logo5 from '../resources/icons and logos/logo5.svg'
-import Logo6 from '../resources/icons and logos/logo6.svg'
+import Logo1 from '../assets/icons and logos/logo1.svg'
+import Logo2 from '../assets/icons and logos/logo2.svg'
+import Logo3 from '../assets/icons and logos/logo3.svg'
+import Logo4 from '../assets/icons and logos/logo4.svg'
+import Logo5 from '../assets/icons and logos/logo5.svg'
+import Logo6 from '../assets/icons and logos/logo6.svg'
 
 const Brands = () => {
   return (
