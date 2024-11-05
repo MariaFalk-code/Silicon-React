@@ -1,5 +1,6 @@
 import "./App.css";
 import Brands from "./components/Brands";
+import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -14,6 +15,7 @@ function App() {
       <div className="wrapper">
         <main class="main flex-column gap-5">
           <Brands />
+          <Features />
         </main>
         <Footer />
       </div>
