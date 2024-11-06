@@ -966,7 +966,7 @@ em {
   height: fit-content;
 }
 
-.acc-item {
+.faq-item {
   background: var(--background-white);
   margin-bottom: 1rem;
   padding: 1rem 1.5rem;
@@ -985,13 +985,9 @@ em {
     background-color: var(--color-brand);
     color: var(--text-white);
   }
-
-  .faq-chevron.active .fa-regular {
-    transform: rotate(180deg);
-  }
 }
 
-.acc-content {
+.faq-content {
   max-height: 0;
   overflow: hidden;
   transition: var(--transition);
