@@ -14,7 +14,20 @@ const DarkModeSwitch = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, [isDarkMode]);
+  
+    const logos = document.querySelectorAll('.logo');
+  logos.forEach(logo => {
+    const lightSrc = logo.getAttribute('data-light');
+    const darkSrc = logo.getAttribute('data-dark');
+
+    if (isDarkMode) {
+      logo.src = darkSrc;
+    } else {
+      logo.src = lightSrc;
+    }
+  });
+      
+}, [isDarkMode]);
   
   return (
     
