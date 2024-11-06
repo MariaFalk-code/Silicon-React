@@ -1,5 +1,6 @@
 import SiliconLight from "../assets/icons and logos/silicon-light.png";
 import SiliconDark from "../assets/icons and logos/silicon-dark.png";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 const Nav = () => {
   return (
@@ -17,13 +18,7 @@ const Nav = () => {
         </a>
       </div>
       <div className="navgroup-right flex-center gap-2">
-        <div className="flex-center">
-          <small className="hidden-XS">Dark Mode</small>
-          <label for="darkModeSwitch" className="toggle">
-            <input type="checkbox" id="darkModeSwitch" />
-            <span className="slider"></span>
-          </label>
-        </div>
+        <DarkModeSwitch />
         <a href="#" tabindex="-1" className="hidden-XS-S">
           <button className="btn btn-s">
             <i className="fa-light fa-user"></i> &nbsp; Sign in / up
