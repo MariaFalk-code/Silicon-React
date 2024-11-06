@@ -4,6 +4,9 @@ import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Functionality from "./components/MainFunctions";
 import Header from "./components/Header";
+import Reviews from "./components/Reviews";
+import Faq from "./components/Faq";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Brands />
           <Features />
           <Functionality />
+          <Reviews />
+          <Faq />
+          <Newsletter />
         </main>
         <Footer />
       </div>
