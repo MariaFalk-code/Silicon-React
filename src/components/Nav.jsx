@@ -1,6 +1,8 @@
 import SiliconLight from "../assets/icons and logos/silicon-light.png";
 import SiliconDark from "../assets/icons and logos/silicon-dark.png";
 import DarkModeSwitch from "./DarkModeSwitch";
+import { NavLink } from "react-router-dom";
+import ScrollToSection from "./ScrollToSection";
 
 const Nav = () => {
   return (
@@ -13,9 +15,10 @@ const Nav = () => {
           data-dark={SiliconDark}
           alt="Silicon Logo"
         />
-        <a className="nav-feat hidden-XS-S" href="#features">
-          Features
-        </a>
+        <ScrollToSection />
+        <NavLink className="nav-links" to="/contact">
+          Contact
+        </NavLink>
       </div>
       <div className="navgroup-right flex-center gap-2">
         <DarkModeSwitch />
