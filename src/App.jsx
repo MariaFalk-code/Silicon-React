@@ -2,7 +2,8 @@ import "./App.css";
 import Brands from "./components/Brands";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
-import Functionality from "./components/Functionality";
+import MainFunctions from "./components/MainFunctions";
+import MoreFunctions from "./components/MoreFunctions";
 import Header from "./components/Header";
 import Reviews from "./components/Reviews";
 import Faq from "./components/Faq";
@@ -20,7 +21,8 @@ function App() {
         <main className="main flex-column gap-5">
           <Brands />
           <Features />
-          <Functionality />
+          <MainFunctions />
+          <MoreFunctions />
           <Reviews />
           <Faq />
           <Newsletter />
