@@ -17,7 +17,7 @@ const FaqContact = () => {
             <img src={Phone} alt="phone icon" />
           </a>
           <em>Still have questions?</em>
-          <a href="#" tabindex="-1">
+          <a href="#" tabIndex="-1">
             <button className="btn btn-frameless btn-call">
               Contact us &nbsp; <i className="fa-regular fa-arrow-right"></i>
             </button>
@@ -28,7 +28,7 @@ const FaqContact = () => {
             <img src={TextBubble} alt="textbubble icon" />
           </a>
           <em>Don't like phone calls?</em>
-          <a href="#" tabindex="-1">
+          <a href="#" tabIndex="-1">
             <button className="btn btn-frameless btn-text">
               Contact us &nbsp; <i className="fa-regular fa-arrow-right"></i>
             </button>

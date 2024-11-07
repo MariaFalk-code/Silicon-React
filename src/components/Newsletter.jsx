@@ -13,9 +13,9 @@ const Newsletter = () => {
           Subscribe to our newsletter <span className="hidden-XS-S">to stay informed about latest updates</span>
         </h3>
       </div>
-      <form className="email-form" autocomplete="on">
+      <form className="email-form" autoComplete="on">
         <i className="fa-thin fa-envelope icon"></i>
-        <input className="form-input" type="email" id="email" placeholder="Your Email" autocomplete="email" />
+        <input className="form-input" type="email" id="email" placeholder="Your Email" autoComplete="email" />
         <a href="#">
           <button className="btn btn-l sub">Subscribe</button>
         </a>

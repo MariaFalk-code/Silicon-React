@@ -18,7 +18,7 @@ const Hero = () => {
           Save, spend & manage money in your pocket.
         </p>
         <div className="flex-left gap-1-5 btn-tablet">
-          <a href="#" tabindex="-1">
+          <a href="#" tabIndex="-1">
             <button className="btn btn-market flex-center">
               <img
                 className="logo"
@@ -30,7 +30,7 @@ const Hero = () => {
               />
             </button>
           </a>
-          <a href="#" tabindex="-1">
+          <a href="#" tabIndex="-1">
             <button className="btn btn-market flex-center">
               <img
                 className="logo"
@@ -44,7 +44,7 @@ const Hero = () => {
           </a>
         </div>
         <div className="discover flex-left gap-1">
-          <a href="#features" tabindex="-1">
+          <a href="#features" tabIndex="-1">
             <button className="btn btn-chevron">
               <i className="fa-regular fa-chevron-down"></i>
             </button>

@@ -33,7 +33,7 @@ const DarkModeSwitch = () => {
     
     <div className="flex-center">
       <small className="hidden-XS">Dark Mode</small>
-      <label HTMLfor="darkModeSwitch" className="toggle">
+      <label htmlFor="darkModeSwitch" className="toggle">
         <input type="checkbox" checked={isDarkMode} onChange={toggleDarkMode}/>
         <span className="slider"></span>
       </label>

@@ -19,7 +19,7 @@ const Nav = () => {
       </div>
       <div className="navgroup-right flex-center gap-2">
         <DarkModeSwitch />
-        <a href="#" tabindex="-1" className="hidden-XS-S">
+        <a href="#" tabIndex="-1" className="hidden-XS-S">
           <button className="btn btn-s">
             <i className="fa-light fa-user"></i> &nbsp; Sign in / up
           </button>
