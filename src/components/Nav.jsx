@@ -1,24 +1,27 @@
 import SiliconLight from "../assets/icons and logos/silicon-light.png";
 import SiliconDark from "../assets/icons and logos/silicon-dark.png";
 import DarkModeSwitch from "./DarkModeSwitch";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ScrollToSection from "./ScrollToSection";
 
 const Nav = () => {
   return (
-    <nav className="nav flex-center">
-      <div className="navgroup-left flex-left gap-3">
-        <img
-          className="logo siliconlogo" //className "logo" is used to target the logo in JS.
-          src={SiliconLight}
-          data-light={SiliconLight}
-          data-dark={SiliconDark}
-          alt="Silicon Logo"
-        />
-        <ScrollToSection />
-        <NavLink className="nav-links" to="/contact">
-          Contact
-        </NavLink>
+    <nav className="nav flex-left">
+      <div className="navgroup-left flex-left gap-2">
+        <Link to="/" className="logo-link">
+          <img
+            className="logo siliconlogo" //className "logo" is used to target the logo in JS.
+            src={SiliconLight}
+            data-light={SiliconLight}
+            data-dark={SiliconDark}
+            alt="Silicon Logo"
+          />
+        </Link>
+          {/* //Below is a custom component that scrolls to the Features section on the home page when the link is clicked*/}
+          <ScrollToSection />
+          <NavLink className="nav-links" to="/contact">
+            Contact
+          </NavLink> 
       </div>
       <div className="navgroup-right flex-center gap-2">
         <DarkModeSwitch />

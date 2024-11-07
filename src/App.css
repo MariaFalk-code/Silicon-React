@@ -465,10 +465,6 @@ small {
 .navgroup-left {
   margin-right: auto;
 
-  .siliconlogo {
-    max-height: 45%;
-    max-width: 45%;
-  }
 
   .nav-links {
     font-size: 1rem;
@@ -497,7 +493,7 @@ small {
 
 small {
   font-weight: 600;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 /* Toggle coded with help from Joakim's video */
