@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
       </div>
       <div className="wrapper">
         <main className="main flex-column gap-5">
-          
+          <h1>HEJ</h1>
         </main>
         <Footer />
       </div>
