@@ -16,29 +16,28 @@ const DarkModeSwitch = () => {
     }
   
     const logos = document.querySelectorAll('.logo');
-  logos.forEach(logo => {
-    const lightSrc = logo.getAttribute('data-light');
-    const darkSrc = logo.getAttribute('data-dark');
+    logos.forEach(logo => {
+      const lightSrc = logo.getAttribute('data-light');
+      const darkSrc = logo.getAttribute('data-dark');
 
-    if (isDarkMode) {
-      logo.src = darkSrc;
-    } else {
-      logo.src = lightSrc;
-    }
-  });
+      if (isDarkMode) {
+        logo.src = darkSrc;
+      } else {
+        logo.src = lightSrc;
+      }
+    });
       
-}, [isDarkMode]);
+  }, [isDarkMode]);
   
   return (
-    
     <div className="flex-center">
       <small className="hidden-XS">Dark Mode</small>
       <label htmlFor="darkModeSwitch" className="toggle">
-        <input type="checkbox" checked={isDarkMode} onChange={toggleDarkMode}/>
+        <input type="checkbox" id="darkModeSwitch" checked={isDarkMode} onChange={toggleDarkMode}/>
         <span className="slider"></span>
       </label>
     </div>
   );
 }
 
-  export default DarkModeSwitch;
+export default DarkModeSwitch;
