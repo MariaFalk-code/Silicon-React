@@ -8,7 +8,7 @@ import IphoneBottom from "../assets/Pictures desktop/Iphone 12 Pro bottom-header
 const Hero = () => {
   return (
     <>
-      <div className="hero-header">
+      <div className="hero-header mt-5">
         <h1 className="display">Manage All Your Money in One App</h1>
       </div>
       <div className="hero-main flex-column">
@@ -43,7 +43,7 @@ const Hero = () => {
             </button>
           </a>
         </div>
-        <div className="discover flex-left gap-1">
+        <div className="discover flex-left gap-1 mt-5">
           <a href="#features" tabIndex="-1">
             <button className="btn btn-chevron">
               <i className="fa-regular fa-chevron-down"></i>

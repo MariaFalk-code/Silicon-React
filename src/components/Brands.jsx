@@ -7,7 +7,7 @@ import Logo6 from '../assets/icons and logos/logo6.svg'
 
 const Brands = () => {
   return (
-    <aside className="brands flex-center gap-1 hidden-XS">
+    <aside className="brands flex-center gap-1 mt-5 hidden-XS">
           <div className="brand-box flex-center">
             <img src={Logo1} alt="Brandlogo 1" />
           </div>

@@ -5,7 +5,7 @@ import Wallet from "../assets/icons and logos/wallet-regular.svg";
 
 const MoreFunctions = () => {
   return (
-    <div className="more-functions flex-left hidden-XS-S">
+    <div className="more-functions flex-left mt-3 hidden-XS-S">
       <div className="grid-tl flex-column">
         <h3>Make your money transfer simple and clear</h3>
 

@@ -314,7 +314,22 @@
   gap: 5rem;
 }
 
+/*Margin*/
+.mb-5 {
+  margin-bottom: 5rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.mt-10 {
+  margin-top: 10rem;
+}
+
 /*Misc*/
+
 .icon-box {
   background-color: rgba(99, 102, 241, 0.08);
   border-radius: 0.5em;
@@ -408,6 +423,16 @@ small {
   height: fit-content;
 
   background: var(--background-hero);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.full-width-contact-bg {
+  width: 100%;
+  height: fit-content;
+
+  background: var(--grey100);
 
   background-size: cover;
   background-position: center;
@@ -551,8 +576,7 @@ small {
 }
 
 .hero-header {
-  grid-area: hero-header;
-  margin-top: 5rem;
+  grid-area: hero-header
 }
 
 .hero-main {
@@ -568,8 +592,6 @@ small {
 
   .discover {
     justify-content: flex-start;
-
-    margin-top: 5rem;
   }
 }
 
@@ -597,7 +619,6 @@ small {
 /* End of hero section */
 
 .brands {
-  margin-top: 5rem;
   height: fit-content;
 
   .brand-box {
@@ -746,8 +767,6 @@ button.next {
   padding-inline: 7rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  margin-top: 3rem;
 }
 
 .grid-tl {
