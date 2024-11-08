@@ -19,7 +19,7 @@ const FaqItem = ({question, answer}) => {
 
 
   return (
-    <div className="faq-item">
+    <div className="faq-item mb-1">
     <div className="question flex-left">
         <h5>{question}</h5>
       <button className="btn btn-chevron faq-chevron" onClick={toggleActive}>

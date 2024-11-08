@@ -4,8 +4,6 @@ const FaqAccordion = () => {
   return (
     <div className="faq-accordion">
       <FaqList />
-      <FaqList />
-      <FaqList />
     </div>
   );
 };

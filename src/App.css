@@ -6,6 +6,7 @@
   --color-brand: rgb(99, 102, 241);
   --white: rgb(255, 255, 255);
   --system-success: rgb(34, 197, 94);
+  --system-warning: rgb(255, 186, 8);
 
   --grey100: rgb(243, 246, 255);
   --grey200: rgb(239, 242, 252);
@@ -315,6 +316,9 @@
 }
 
 /*Margin*/
+.mb-1 {
+  margin-bottom: 1rem;
+}
 .mb-5 {
   margin-bottom: 5rem;
 }
@@ -861,7 +865,7 @@ li {
     margin-top: 0;
   }
 
-  .rew {
+  .review {
     flex: 1;
     background-color: var(--background-primary);
     border: none;
@@ -872,15 +876,21 @@ li {
     position: relative;
   }
 
-  i {
+  .cite-box{
     position: absolute;
     top: 0;
     transform: translateY(-50%);
   }
 
+  
+  .star-icon.fa-solid{
+    border-color: var(--system-warning);
+    color: var(--system-warning);
+  }
+
+
   p {
     font-size: 1.125rem;
-    margin-bottom: 1rem;
   }
 
   .author {
@@ -990,7 +1000,6 @@ em {
 
 .faq-item {
   background: var(--background-white);
-  margin-bottom: 1rem;
   padding: 1rem 1.5rem;
   border: none;
   border-radius: 0.5em;

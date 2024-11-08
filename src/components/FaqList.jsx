@@ -1,17 +1,23 @@
 import FaqItem from './FaqItem';
+import { useState, useEffect } from 'react';
 
 const FaqList = () => {
-  const faqData = [
-    {
-      question: 'What is React?', answer: 'bla bla bla vla fkrdr werwetrwe gtwetwrt tgwerygte5ry gegwrghy ghwherher ghwrhwerher hwrherhet herhetaheth heraaerherh herhaetrh gtshsthjtsrj jryjryjryjryjry jhrsjryjyrj jrsryjryjryj' },
-    { question: 'What is a component?', answer: 'Components are reusable building blocks in React.' },
-    // Add more FAQs as needed
-  ];
+  const [faqData, setFaqData] = useState([]);
+
+  const fetchFaqData = async () => {
+    const response = await fetch('https://win24-assignment.azurewebsites.net/api/faq');
+    const data = await response.json();
+    setFaqData(data);
+  }
+
+  useEffect(() => {
+    fetchFaqData();
+  }, []);
 
   return (
     <div className="faq-list">
-      {faqData.map((faq, index) => (
-        <FaqItem key={index} question={faq.question} answer={faq.answer} />
+      {faqData.map((faq) => (
+        <FaqItem key={faq.id} question={faq.title} answer={faq.content} />
       ))}
     </div>
   );
