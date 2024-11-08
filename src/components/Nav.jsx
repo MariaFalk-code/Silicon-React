@@ -19,7 +19,7 @@ const Nav = () => {
         </Link>
           {/* //Below is a custom component that scrolls to the Features section on the home page when the link is clicked*/}
           <ScrollToSection />
-          <NavLink className="nav-links" to="/contact">
+          <NavLink className="nav-links" to="/Contact">
             Contact
           </NavLink> 
       </div>
