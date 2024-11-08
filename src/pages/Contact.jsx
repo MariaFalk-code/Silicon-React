@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="wrapper">
-        <main className="main flex-left gap-5 mt-10">
+        <main className="main flex-lt gap-5 mt-10">
           <Location />
         </main>
         <Footer />

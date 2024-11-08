@@ -367,13 +367,20 @@ body {
   color: var(--text-grey700);
 }
 
-.display {
+h1.display {
   font-size: 3.3rem;
   font-weight: 800;
   line-height: 130%;
   color: var(--headline);
 
   margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 130%;
+  color: var(--headline);
 }
 
 h2 {
@@ -432,7 +439,7 @@ small {
   width: 100%;
   height: fit-content;
 
-  background: var(--grey100);
+  background: var(--background-secondary);
 
   background-size: cover;
   background-position: center;
