@@ -501,7 +501,6 @@ small {
 .navgroup-left {
   margin-right: auto;
 
-
   .nav-links {
     font-size: 1rem;
     font-weight: 600;
@@ -587,7 +586,7 @@ small {
 }
 
 .hero-header {
-  grid-area: hero-header
+  grid-area: hero-header;
 }
 
 .hero-main {
@@ -876,18 +875,16 @@ li {
     position: relative;
   }
 
-  .cite-box{
+  .cite-box {
     position: absolute;
     top: 0;
     transform: translateY(-50%);
   }
 
-  
-  .star-icon.fa-solid{
+  .star-icon.fa-solid {
     border-color: var(--system-warning);
     color: var(--system-warning);
   }
-
 
   p {
     font-size: 1.125rem;
@@ -1038,7 +1035,6 @@ em {
     padding-left: 5vw;
     padding-block: 3.75vw;
   }
-  
 
   .notification {
     max-height: 4.88rem;
@@ -1088,13 +1084,23 @@ em {
   }
 }
 
-.footer {
-  color: rgba(var(--text-grey600), 0.8);
-  gap: 0.2rem;
+  .footer {
+    color: rgba(var(--text-grey600), 0.8);
+    gap: 0.2rem;
 
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .med-center {
+    i {
+      color: var(--color-brand);
+    }
+
+    .move-icon {
+      transform: translateY(0.4em);
+    }
+  }
 
 /* Non-wrapper-related Media queries */
 /* XSMALL ('mobile')*/
