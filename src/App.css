@@ -1084,23 +1084,23 @@ em {
   }
 }
 
-  .footer {
-    color: rgba(var(--text-grey600), 0.8);
-    gap: 0.2rem;
+.footer {
+  color: rgba(var(--text-grey600), 0.8);
+  gap: 0.2rem;
 
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.med-center {
+  i {
+    color: var(--color-brand);
   }
 
-  .med-center {
-    i {
-      color: var(--color-brand);
-    }
-
-    .move-icon {
-      transform: translateY(0.4em);
-    }
+  .move-icon {
+    transform: translateY(0.4em);
   }
+}
 
 /* Non-wrapper-related Media queries */
 /* XSMALL ('mobile')*/
@@ -1157,7 +1157,7 @@ em {
   }
 
   .discover {
-    margin-top: 0;
+    margin-top: 2rem;
     margin-inline: auto;
   }
 
@@ -1191,6 +1191,7 @@ em {
       padding: 6rem 45%;
     }
   }
+
   .faq {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -1221,6 +1222,24 @@ em {
   .footer {
     flex-direction: column;
   }
+
+  .location {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .med-center {
+    text-align: center;
+  }
+
+  .social-media {
+    align-items: center;
+    justify-content: center;
+}
 }
 
 /*SMALL ('tablet')*/
@@ -1312,6 +1331,19 @@ em {
   .text-sub {
     text-align: start;
     padding-right: 2rem;
+  }
+
+  .location {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .med-center {
+    text-align: center;
   }
 }
 

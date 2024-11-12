@@ -43,10 +43,16 @@ const Newsletter = () => {
       <div className="subscribe gap-2">
         <img className="notification hidden-S" src={Notification} alt="notification icon" />
         <h3 className="text-sub">
-          {submitted ? 'Thank you for subscribing!' : 'Subscribe to our newsletter to stay informed about latest updates'}
+          {submitted ? (
+            "Thank you for subscribing!"
+          ) : (
+            <>
+              Subscribe to our newsletter <span className="hidden-XS-S">to stay informed about latest updates</span>
+            </>
+          )}
         </h3>
       </div>
-      
+
       {!submitted && (
         <form onSubmit={handleSubmit} className="email-form" autoComplete="on" noValidate>
           <i className="fa-thin fa-envelope icon"></i>
@@ -60,7 +66,9 @@ const Newsletter = () => {
             autoComplete="email"
             required
           />
-          <button type="submit" className="btn btn-l sub">Subscribe</button>
+          <button type="submit" className="btn btn-l sub">
+            Subscribe
+          </button>
         </form>
       )}
     </section>

@@ -19,7 +19,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="wrapper">
-        <main className="main flex-lt gap-5 mt-10">
+        <main>
           <Location />
         </main>
         <Footer />

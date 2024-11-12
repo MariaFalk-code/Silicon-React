@@ -1,10 +1,11 @@
 import Map from "../assets/Pictures desktop/map.png";
+import SocialMedia from "./SocialMedia";
 
 const Location = () => {
   return (
-    <>
-      <div>
-        <img src={Map} alt="Map showing the location of our medical centers" />
+    <div className="flex-lt gap-5 mt-10 location">
+      <div className="hidden-XS map">
+        <img src={Map} alt="Map showing the location of our medical centers"/>
       </div>
       <div className="flex-column">
         <div className="med-center">
@@ -39,9 +40,10 @@ const Location = () => {
             <p> <b>Mon – Fri:</b> 9:00 am – 22:00 am <br/>
             <b>Sat – Sun:</b> 9:00 am – 20:00 am</p>
           </div>
+        <SocialMedia />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
