@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 const Newsletter = () => {
   const [formData, setFormData] = useState({ email: "" });
+  const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -18,10 +19,36 @@ const Newsletter = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+
+    if (value.trim() === "") {
+      setErrors((prevErrors) => ({ ...prevErrors, [name]: "Email is required" }));
+    } else {
+      setErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const newErrors = {};
+    Object.keys(formData).forEach((field) => {
+      if (formData[field].trim() === "") {
+        newErrors[field] = "This field is required";
+      }
+    });
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setErrors({});
+
     const res = await fetch("https://win24-assignment.azurewebsites.net/api/forms/subscribe", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -55,17 +82,18 @@ const Newsletter = () => {
 
       {!submitted && (
         <form onSubmit={handleSubmit} className="email-form" autoComplete="on" noValidate>
-          <i className="fa-thin fa-envelope icon"></i>
-          <input
-            className="form-input"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            autoComplete="email"
-            required
-          />
+            <i className="fa-thin fa-envelope icon"></i>
+            <input
+              className="form-input"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              autoComplete="email"
+              required
+            />
+            <small className="error">{errors.email && errors.email}</small>
           <button type="submit" className="btn btn-l sub">
             Subscribe
           </button>
