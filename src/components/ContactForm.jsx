@@ -24,7 +24,7 @@ const ContactForm = () => {
             <option value='psychiatrist'>Psychiatrist</option>
           </select>
         </div>
-        <button className="btn-l" type='submit'>Make an appoinment</button>
+        <button className="btn btn-l" type='submit'>Make an appoinment</button>
       </form>
     
     

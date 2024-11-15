@@ -1110,6 +1110,9 @@ em {
 }
 
 .form-box {
+  position: relative;
+  top: 12%;
+  
   width: 100%;
   height: fit-content;
   padding: 4rem;
@@ -1119,6 +1122,11 @@ box-shadow: var(--box-shadow);
 
   h2 {
     font-size: 2rem;
+  }
+
+  .btn {
+    margin-top: 5rem;
+    width: 100%;
   }
 
   .form-group {
