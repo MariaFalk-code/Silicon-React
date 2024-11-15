@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const ContactForm = () => {
   return (
@@ -16,6 +16,7 @@ const ContactForm = () => {
         <div className='form-group'>
           <label for='specialist'>Specialist</label>
           <select id='droplist' name='droplist'>
+            <option value=''>Select a specialist</option>
             <option value='general'>General</option>
             <option value='nurse'>Nurse</option>
             <option value='doctor'>Doctor</option>
@@ -23,7 +24,7 @@ const ContactForm = () => {
             <option value='psychiatrist'>Psychiatrist</option>
           </select>
         </div>
-        <button type='submit'>Make an appoinment</button>
+        <button className="btn-l" type='submit'>Make an appoinment</button>
       </form>
     
     

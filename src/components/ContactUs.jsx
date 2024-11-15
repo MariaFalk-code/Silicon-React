@@ -7,7 +7,7 @@ const ContactUs = () => {
       <h1>Contact Us</h1>
       <div className="flex-lt gap-1">
         <img src={Envelope} aria-hidden="true"/>
-        <div>
+        <div className="contact-us">
           <h4>Email us</h4>
           <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
           <a href="#" tabIndex="-1">
@@ -19,7 +19,7 @@ const ContactUs = () => {
       </div>
       <div className="mb-5 flex-lt gap-1">
         <img src={AddGroup} aria-hidden="true"/>
-        <div>
+        <div className="contact-us">
           <h4>Careers</h4>
           <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
           <a href="#" tabIndex="-1">
