@@ -9,16 +9,16 @@
     const toggleDropdown = () => setIsOpen(!isOpen);
   
     return (
-      <div className="dropdown">
+      <div className="dropdown-links hidden-desktop">
         <button
-          className="dropdown-button"
+          className="dropdown-links-button hidden-desktop"
           type="button"
           onClick={toggleDropdown}
         >
           {placeholder}
         </button>
         {isOpen && (
-          <ul className="dropdown-list">
+          <ul className="dropdown-links-list hidden-desktop">
             {options.map((option, index) => (
               <li key={index} className="dropdown-item">
                 <NavLink

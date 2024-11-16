@@ -197,12 +197,12 @@
   }
 }
 
-.dropdown {
+.dropdown-links {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-button {
+.dropdown-links-button {
     background-color: var(--btn-white);
     color: var(--text-grey800);
     font-size: 1.5rem;
@@ -230,7 +230,7 @@
 }
 
 
-.dropdown-list {
+.dropdown-links-list {
   position: absolute;
   top: 100%;
   left: 0;
@@ -1394,7 +1394,7 @@ box-shadow: var(--box-shadow);
   }
 
   .form-box {
-    top: 0;
+    top: -5%;
   }
 
   .location {
@@ -1512,7 +1512,7 @@ box-shadow: var(--box-shadow);
   }
 
   .form-box {
-    top: 0;
+    top: -5%;
   }
 
   .location {
