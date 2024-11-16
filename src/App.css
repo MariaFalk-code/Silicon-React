@@ -1248,6 +1248,10 @@ box-shadow: var(--box-shadow);
       background-color: var(--background-secondary);
     }  
   }
+
+  .error-msg { color: var(--system-error);
+    font-size: 0.85rem;
+  }
 }
 
 .contact-us {
