@@ -1166,6 +1166,7 @@ box-shadow: var(--box-shadow);
     width: 100%;
   }
 
+
   .form-group {
     display: flex;
     flex-direction: column;
@@ -1251,6 +1252,19 @@ box-shadow: var(--box-shadow);
 
   .error-msg { color: var(--system-error);
     font-size: 0.85rem;
+  }
+}
+
+.form-box.submitted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
   }
 }
 

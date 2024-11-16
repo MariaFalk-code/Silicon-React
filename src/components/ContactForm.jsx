@@ -9,12 +9,15 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    setError,
+    clearErrors,
     formState: { errors },
     reset,
   } = useForm();
 
   const handleSelect = (option) => {
     setSelectedSpecialist(option);
+    clearErrors("specialist");
   };
 
   const onSubmit = async (data) => {
@@ -24,7 +27,7 @@ const ContactForm = () => {
     }
 
     const formData = {
-    name: data.name,
+    fullName: data.name,
     email: data.email,
     specialist: selectedSpecialist,
     };
@@ -34,13 +37,13 @@ const ContactForm = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(formData),
     });
 
     if (response.ok) {
       setSubmitted(true);
       reset();
-      selectedSpecialist("");
+      setSelectedSpecialist("");
       clearErrors("specialist");
     }
   };
@@ -48,8 +51,8 @@ const ContactForm = () => {
 
   if (submitted) {
     return (
-      <div className="form-box">
-        <h2>Thank you for your enquiry! We will soon be in contact.</h2>
+      <div className="form-box submitted">
+        <h2>Thank you for your enquiry! We will be in contact soon.</h2>
         <button className="btn btn-l" onClick={() => setSubmitted(false)}>
           Return
         </button>
