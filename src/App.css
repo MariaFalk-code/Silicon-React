@@ -1268,6 +1268,25 @@ box-shadow: var(--box-shadow);
   }
 }
 
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--text-grey800); 
+}
+
+.breadcrumb a {
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: var(--text-grey800);
+}
+
 .contact-us {
   p {
     text-wrap: balance;

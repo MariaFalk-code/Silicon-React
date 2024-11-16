@@ -2,6 +2,7 @@ import AddGroup from "../assets/icons and logos/add-group.svg";
 import Envelope from "../assets/icons and logos/envelope.svg";
 
 const ContactUs = () => {
+  
   return (
     <div className="flex-column gap-1">
       <h1>Contact Us</h1>
@@ -29,7 +30,7 @@ const ContactUs = () => {
           </a>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
