@@ -3,7 +3,7 @@ import FaqAccordion from "./FaqAccordion"
 
 const Faq = () => {
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <FaqAccordion />
       <FaqContact />
     </section>

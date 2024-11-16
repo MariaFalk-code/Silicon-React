@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Dropdown from "./Dropdown";
+import DropDown from "./Dropdown";
 
 const ContactForm = () => {
   const [selectedSpecialist, setSelectedSpecialist] = useState("");
@@ -29,7 +29,7 @@ const ContactForm = () => {
         </div>
         <div className="form-group">
           <label htmlFor="specialist">Specialist</label>
-          <Dropdown
+          <DropDown
             options={["Nurse", "Doctor", "Physiotherapist", "Psychiatrist"]}
             placeholder={
               <span className="arrow-gap">
