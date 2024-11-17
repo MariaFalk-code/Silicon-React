@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 function Dropdown({ options, placeholder, onSelect }) {
   const [isOpen, setIsOpen] = useState(false);
+ //Rendered by ChatGPT4o
   const [selectedOption, setSelectedOption] = useState(placeholder);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
