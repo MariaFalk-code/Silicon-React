@@ -2,8 +2,8 @@ import SiliconLight from "../assets/icons and logos/silicon-light.png";
 import SiliconDark from "../assets/icons and logos/silicon-dark.png";
 import DarkModeSwitch from "./DarkModeSwitch";
 import { Link, NavLink } from "react-router-dom";
-import ScrollToSection from "./ScrollToSection";
-import DropdownLinks from "./DropdownLinks";
+import Scroller from "./Scroller";
+import MobileMeny from "./MobileMeny";
 
 const Nav = () => {
   return (
@@ -18,11 +18,21 @@ const Nav = () => {
             alt="Silicon Logo"
           />
         </Link>
-        {/* //Below is a custom component that scrolls to the Features section on the home page when the link is clicked*/}
-        <ScrollToSection />
-        <NavLink className="nav-links hidden-XS-S" to="/Contact">
-          Contact
-        </NavLink>
+        <div className="nav-links hidden-XS-S">
+          <Scroller sectionId="features" className="features">
+            Features
+          </Scroller>
+        </div>
+        <div className="nav-links hidden-XS-S">
+          <Scroller sectionId="faq" className="faq-link">
+            FAQ
+          </Scroller>
+        </div>
+        <div className="nav-links hidden-XS-S">
+          <NavLink to="/Contact">
+            Contact
+          </NavLink>
+        </div>
       </div>
       <div className="navgroup-right flex-center gap-2">
         <DarkModeSwitch />
@@ -32,9 +42,10 @@ const Nav = () => {
           </button>
         </a>
       </div>
-      <DropdownLinks
+      <MobileMeny
         options={[
           { label: "Features", link: "/#features" },
+          { label: "FAQ", link: "/#faq" },
           { label: "Contact", link: "/Contact" },
         ]}
         placeholder={<i className="fa-regular fa-bars hidden-desktop" title="meny"></i>}

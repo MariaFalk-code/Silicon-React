@@ -3,7 +3,7 @@
   import { useState } from "react";
   import { NavLink } from "react-router-dom";
   
-  function DropdownLinks({ options, placeholder }) {
+  function MobileMeny({ options, placeholder }) {
     const [isOpen, setIsOpen] = useState(false);
   
     const toggleDropdown = () => setIsOpen(!isOpen);
@@ -37,4 +37,4 @@
     );
   }
 
-export default DropdownLinks;
+export default MobileMeny;

@@ -852,7 +852,6 @@ button.next {
   }
 }
 
-
 .grid-tr {
   justify-content: center;
   align-items: flex-end;
@@ -1304,7 +1303,7 @@ em {
   color: var(--text-grey800);
 }
 
-.breadcrumb a {
+.breadcrumb.a {
   color: var(--color-brand);
   text-decoration: none;
 }
