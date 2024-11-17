@@ -20,10 +20,10 @@ const Brands = () => {
           <div className="brand-box flex-center">
             <img src={Logo4} alt="Brandlogo 4" />
           </div>
-          <div className="brand-box flex-center hidden-XS-S">
+          <div className="brand-box flex-center">
             <img src={Logo5} alt="Brandlogo 5" />
           </div>
-          <div className="brand-box flex-center hidden-XS-S">
+          <div className="brand-box flex-center">
             <img src={Logo6} alt="Brandlogo 6" />
           </div>
         </aside>

@@ -669,10 +669,11 @@ small {
   }
 }
 
-/* End of hero section */
+/* Brands section (not visible on mobile) */
 
 .brands {
   height: fit-content;
+  flex-wrap: wrap;
 
   .brand-box {
     flex: 1 1 0;
@@ -680,6 +681,9 @@ small {
     border-radius: 0.5em;
     height: 6.25rem;
     padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .brand-box img {
@@ -687,6 +691,8 @@ small {
     flex-shrink: 0;
   }
 }
+
+/* Features section */
 
 .features {
   height: fit-content;
@@ -698,6 +704,7 @@ small {
   display: block;
   object-fit: contain;
   max-width: 100%;
+  margin-right: 1rem;
 }
 
 .feat-text {
@@ -813,11 +820,12 @@ button.next {
   margin-top: 15rem;
 }
 
+/*More functions section, visible on desktop only*/
+
 .more-functions {
   background-color: var(--background-primary);
   max-width: 100%;
   height: fit-content;
-  padding-inline: 7rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -833,25 +841,36 @@ button.next {
 .grid-tl > ul {
   list-style-type: none;
   padding-inline-start: 0;
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  .li-icon {
+    margin-right: 1rem;
+    color: var(--color-brand);
+  }
 }
 
-li {
-  margin-bottom: 1rem;
-}
-
-.li-icon {
-  margin-right: 1rem;
-  color: var(--color-brand);
-}
 
 .grid-tr {
   justify-content: center;
   align-items: flex-end;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .grid-bl {
   justify-content: center;
   align-items: flex-start;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .grid-br {
@@ -891,6 +910,8 @@ li {
   margin-top: 1.5rem;
   margin-right: auto;
 }
+
+/*Reviews section*/
 
 .reviews {
   background-color: var(--background-secondary);
@@ -955,6 +976,8 @@ li {
     color: rgba(var(--text-grey600), 0.9);
   }
 }
+
+/*FAQ section*/
 
 .faq {
   width: 100%;
@@ -1068,6 +1091,8 @@ em {
   }
 }
 
+/*Newsletter section*/
+
 .newsletter {
   background-color: var(--background-secondary);
   border-radius: 0.5rem;
@@ -1144,6 +1169,8 @@ em {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+/*Contact Page section*/
 
 .contact {
   display: grid;
